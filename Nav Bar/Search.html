@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Search | CatG</title>
+<link href="Css/SearchStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<a id="top"></a>
+
+<div class="header">
+	<a href="../Home.html"><img src="../CatG/Logo/CatGWhite.png" alt="Logo"></a>
+		<p>This is the Search page. You can search up any plushie we have available for you!</p>
+</div>
+
+	<div class="topnav">
+		<a href="../Home.html">Home</a>
+		<a href="Characters.html">Characters</a>
+		<a href="Shop.html">Shop</a>
+		<a href="Search.html">Search</a>
+	</div>
+	
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for plushie.." title="Type in a name!">
+
+<ul id="myUL">
+	<li><a href="../Pages For Plushes/Alpha-One/Alpha-One.html">Alpha-One</a></li>
+	
+	<li><a href="../Pages For Plushes/Beebee/Beebee.html">Beebee</a></li>
+	<li><a href="../Pages For Plushes/Bliss Star/Bliss.html">Bliss Star</a></li>
+  
+	<li><a href="../Pages For Plushes/Celeste/Celeste.html">Celeste</a></li>
+	<li><a href="../Pages For Plushes/Cheesy and Chelsea/Cheesy and Chelsea.html">Cheesy &amp; Chelsea</a></li>
+	
+	<li><a href="../Pages For Plushes/Drayden Dormania/Drayden Dormania.html">Drayden Dormania</a></li>
+
+	<li><a href="../Pages For Plushes/Elite/Elite.html">Elite</a></li>
+	<li><a href="../Pages For Plushes/Eve Stone/Eve Stone.html">Eve Stone</a></li>
+
+	<li><a href="../Pages For Plushes/Felipe/Felipe.html">Felipe The Biblically Accurate Angel</a></li>
+	<li><a href="../Pages For Plushes/Fry/Fry.html">Fry</a></li>
+	
+	<li><a href="../Pages For Plushes/Gibsaya/Gibsaya.html">Gibsaya Jude</a></li>
+	<li><a href="../Pages For Plushes/Gibsy Jude/Gibsy.html">Gibsy Jude</a></li>
+	<li><a href="../Pages For Plushes/G.O.O.B/GOOB.html">Goob</a></li>
+	<li><a href="#">Grounk</a></li>
+	
+	<li><a href="../Pages For Plushes/H.O.C.I.L/HOCIL.html">Hocil</a></li>
+	
+	<li><a href="../Pages For Plushes/Isuma/Isuma.html">Isuma</a></li>
+	
+	<li><a href="../Pages For Plushes/Jason/Jason.html">Jason</a></li>
+	<li><a href="#">Jenny The Fetus</a></li>
+	
+	<li><a href="../Pages For Plushes/Liberty/Liberty.html">Liberty &amp; Lineth</a></li>
+	<li><a href="../Pages For Plushes/Lily/Lily.html">Lily Mendez</a></li>
+	<li><a href="../Pages For Plushes/L.O.W/Low.html">Low</a></li>
+	
+	<li><a href="../Pages For Plushes/Slade/Slade.html">Slade Black</a></li>
+	<li><a href="../Pages For Plushes/Starla Stone/Starla Stone.html">Starla Stone</a></li>
+	<li><a href="../Pages For Plushes/Suzu Star/Suzu.html">Suzu Star</a></li>
+	
+	<li><a href="../Pages For Plushes/Zyrak/Zyrak.html">Zyrak</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<div class="footer">	
+	<a href="#top">Return to top</a>
+		<br>
+			<p><img src="../CatG/Social/Insta.png" alt="insta" width="35px" height="35px"> karena_k.p.r</p> 
+				<p><img src="../CatG/Social/Twitter.webp" alt="X" width="35px" height="35px"> karemgoofed</p>
+					<p>&copy; Karen Perez Rios. All Rights Reserved.</p>
+</div>
+	
+</body>
+</html>
