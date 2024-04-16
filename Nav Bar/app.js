@@ -36,13 +36,13 @@ let products = [
     {
         id: 4,
         name: 'G.O.O.B',
-        image: 'Goob.png',
+        image: 'GOOB.png',
         price: 15
     } ,
     {
         id: 5,
         name: 'H.O.C.I.L',
-        image: 'Hocil.png',
+        image: 'HOCIL.png',
         price: 15
     } ,
     {
